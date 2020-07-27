@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+.container-app {
+  height: 100%;
+  width: 100%;
+  .bg-image {
+    height: 100%;
+    // position: absolute;
+    background: url("https://cdn.pixabay.com/photo/2020/03/04/15/37/landscape-4901883_960_720.jpg")
+      no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+  }
+  .container-calculator {
+    width: 30%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .container-display {
+      border-radius: 10px 10px 0 0;
+      height: 15%;
+      padding: 10px;
+      background-color: rgba($color: #fff, $alpha: 0.7);
+      display: flex;
+      flex-direction: column;
+      word-wrap: break-word;
+      grid-column: 1 / -1;
+      word-break: break-all;
+      .operand {
+        text-align: right;
+      }
+      .current-operand {
+        height: 60%;
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .previous-operand {
+        height: 40%;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+    .container-buttons {
+      border-radius: 0 0 10px 10px;
+      height: 85%;
+      // background-color: rgba($color: rgb(214, 214, 214), $alpha: 0.7);
+      display: grid;
+      .container-row-buttons {
+        height: 100%;
+        .row {
+          height: 20%;
+          display: flex;
+          justify-content: space-between;
+          .cell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            background-color: rgba($color: rgb(105, 105, 105), $alpha: 0.7);
+            border: 1px solid black;
+            cursor: pointer;
+            border-radius: 0;
+            width: 25%;
+            height: 100%;
+            font-weight: bold;
+            color: #fff;
+            &:focus {
+              outline: none !important;
+            }
+            &:hover {
+              // background: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

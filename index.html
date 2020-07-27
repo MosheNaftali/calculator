@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="container-app">
+    <div class="bg-image"></div>
+    <div class="container-calculator">
+      <div class="container-display">
+        <div data-previous-operand class="previous-operand operand"></div>
+        <div data-current-operand class="current-operand operand"></div>
+      </div>
+      <div class="container-buttons">
+        <div class="container-row-buttons">
+          <div class="row">
+            <button data-number class="cell">
+              7
+            </button>
+            <button data-number class="cell">
+              8
+            </button>
+            <button data-number class="cell">
+              9
+            </button>
+            <button data-clear class="cell">
+              C
+            </button>
+          </div>
+          <div class="row">
+            <button data-number class="cell">
+              4
+            </button>
+            <button data-number class="cell">
+              5
+            </button>
+            <button data-number class="cell">
+              6
+            </button>
+            <button data-operation class="cell">
+              /
+            </button>
+          </div>
+          <div class="row">
+            <button data-number class="cell">
+              1
+            </button>
+            <button data-number class="cell">
+              2
+            </button>
+            <button data-number class="cell">
+              3
+            </button>
+            <button data-operation class="cell">
+              *
+            </button>
+          </div>
+          <div class="row">
+            <button data-number class="cell">
+              0
+            </button>
+            <button data-number class="cell">
+              .
+            </button>
+            <button data-operation class="cell">
+              +
+            </button>
+            <button data-operation class="cell">
+              -
+            </button>
+          </div>
+          <div class="row">
+            <button data-equals class="cell" style="width: 100%;">
+              =
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>

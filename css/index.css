@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+.container-app {
+  height: 100%;
+  width: 100%;
+}
+
+.container-app .bg-image {
+  height: 100%;
+  background: url("https://cdn.pixabay.com/photo/2020/03/04/15/37/landscape-4901883_960_720.jpg") no-repeat;
+  background-size: cover;
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+}
+
+.container-app .container-calculator {
+  width: 30%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container-app .container-calculator .container-display {
+  border-radius: 10px 10px 0 0;
+  height: 15%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  word-wrap: break-word;
+  grid-column: 1 / -1;
+  word-break: break-all;
+}
+
+.container-app .container-calculator .container-display .operand {
+  text-align: right;
+}
+
+.container-app .container-calculator .container-display .current-operand {
+  height: 60%;
+  font-size: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container-app .container-calculator .container-display .previous-operand {
+  height: 40%;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container-app .container-calculator .container-buttons {
+  border-radius: 0 0 10px 10px;
+  height: 85%;
+  display: -ms-grid;
+  display: grid;
+}
+
+.container-app .container-calculator .container-buttons .container-row-buttons {
+  height: 100%;
+}
+
+.container-app .container-calculator .container-buttons .container-row-buttons .row {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-app .container-calculator .container-buttons .container-row-buttons .row .cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  background-color: rgba(105, 105, 105, 0.7);
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 0;
+  width: 25%;
+  height: 100%;
+  font-weight: bold;
+  color: #fff;
+}
+
+.container-app .container-calculator .container-buttons .container-row-buttons .row .cell:focus {
+  outline: none !important;
+}
+/*# sourceMappingURL=index.css.map */
